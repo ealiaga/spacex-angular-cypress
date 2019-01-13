@@ -7,10 +7,8 @@ before_script:
   - yarn
   - npm install -g --silent firebase-tools 
 
-before_install:
-  - pip install --user codecov
 after_success:
-  - codecov --file coverage/lcov.info --disable search
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
 
 script:
   - npm run build -- --prod
