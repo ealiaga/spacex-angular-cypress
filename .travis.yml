@@ -22,7 +22,7 @@ before_script:
 
 script:
   - npm run test -- --single-run=true
-  - npx cypress run
+  - npm run cypress:run
   - npm run build -- --prod
 
 after_success:
