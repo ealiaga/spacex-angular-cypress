@@ -21,8 +21,7 @@ before_script:
   - npm install -g --silent firebase-tools 
 
 script:
-  - npm run test -- --single-run=true
-  - npm run cypress:run
+  - npm run test
   - npm run build -- --prod
 
 after_success:
