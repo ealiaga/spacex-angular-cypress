@@ -10,18 +10,16 @@ describe('ListLaunchesProxyService', () => {
     }));
 
     it('should be created', () => {
-        const service: ListLaunchesProxyService = TestBed.get(ListLaunchesProxyService);
-        expect(service).toBeTruthy();
+        const proxy: ListLaunchesProxyService = TestBed.get(ListLaunchesProxyService);
+        expect(proxy).toBeTruthy();
     });
 
-    it('should get launches from server', () => {
-        async(() => {
-            const proxy: ListLaunchesProxyService = TestBed.get(ListLaunchesProxyService);
-            proxy.getLaunches().subscribe(
-                response => {
-                    expect(response.body).not.toBeNull();
-                }
-            );
-        });
-    });
+    it('should get launches from server', async(() => {
+        const proxy: ListLaunchesProxyService = TestBed.get(ListLaunchesProxyService);
+        proxy.getLaunches().subscribe(
+            response => {
+                expect(response.body).not.toBeNull();
+            }
+        );
+    }));
 });

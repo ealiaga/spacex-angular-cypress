@@ -1,3 +1,14 @@
-<p>
-  list-launches works!
-</p>
+<h1>SpaceX Launches</h1>
+<div class="container-launches">
+    <div class="launch" *ngFor="let launch of launches">
+        <figure>
+            <img  class="mission-photo" src="{{launch.missionPhoto}}">
+        </figure>
+        <div>
+            <p class="launch-name">{{launch.missionName}}</p>
+            <p>{{launch.launchYear}}</p>
+        </div>
+        <p>{{launch.detail}}</p>
+    </div>
+</div>
+

@@ -1,0 +1,32 @@
+.container-launches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.launch {
+    width: 280px;
+    border: solid 1px #d3d3d3;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin: 0.75rem;
+}
+
+.launch div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75rem 0;
+}
+
+.mission-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.launch-name {
+    font-size: 21px;
+    font-weight: 400;
+}

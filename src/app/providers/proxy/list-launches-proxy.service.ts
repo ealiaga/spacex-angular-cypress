@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ListLaunchesProxyService {
 
-    api = `https://api.spacexdata.com/v3/launches`;
+    api = `https://api.spacexdata.com/v3/launches?launch_year=2018`;
 
     constructor(private http: HttpClient) { }
 
