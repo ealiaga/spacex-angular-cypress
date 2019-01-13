@@ -6,15 +6,8 @@ import { ListLaunchesService } from './list-launches.service';
 describe('ListLaunchesService', () => {
     beforeEach(() => TestBed.configureTestingModule({
         providers: [
-            {
-                provide: ListLaunchesService,
-                useClass: ListLaunchesService,
-                deps: [{
-                        provide: ListLaunchesProxyService,
-                        useClass: ListLaunchesProxyServiceFake
-                    }
-                ]
-            }
+            ListLaunchesService,
+            { provide: ListLaunchesProxyService, useClass: ListLaunchesProxyServiceFake }
         ]
     }));
 

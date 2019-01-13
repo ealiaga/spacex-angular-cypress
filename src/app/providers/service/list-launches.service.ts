@@ -22,7 +22,7 @@ export class ListLaunchesService {
                             missionName: d.mission_name,
                             detail: d.details,
                             launchSuccess: d.launch_success,
-                            missionPhoto: d.links.flickr_images[0],
+                            missionPhoto: d.links.flickr_images[0] || d.links.mission_patch,
                             launchYear: d.launch_year
                         };
                         launches = [...launches, launch];
