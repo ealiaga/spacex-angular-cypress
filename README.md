@@ -2,7 +2,7 @@
 
 # SpaceX Angular Cypress
 
-URL Deploy: https://spacex-lanches.firebaseapp.com
+Simple Angular SPA with unit test, integration test, e2e test and CI/CD using TravisCI
 
 
 API: https://github.com/r-spacex/SpaceX-API
