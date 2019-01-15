@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/277427cc7f3c4e61908ed883af64bdbe)](https://app.codacy.com/app/ealiaga/spacex-angular-cypress?utm_source=github.com&utm_medium=referral&utm_content=ealiaga/spacex-angular-cypress&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/ealiaga/spacex-angular-cypress.png?branch=master)](https://travis-ci.org/ealiaga/spacex-angular-cypress)
 
 # SpaceX Angular Cypress
